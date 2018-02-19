@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{849AE05D-0058-4A8C-A0E8-77DC6BB12E52}</ProjectGuid>
+    <OutputPath>..\bin</OutputPath>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sharpen.Unix</RootNamespace>
+    <AssemblyName>Sharpen.Unix</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>True</Externalconsole>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Mono.Posix\cLocale.cs" />
+    <Compile Include="Mono.Posix\Mono.Posix\Catalog.cs" />
+    <Compile Include="Mono.Posix\Mono.Posix\PeerCred.cs" />
+    <Compile Include="Mono.Posix\Mono.Posix\Syscall.cs" />
+    <Compile Include="Mono.Posix\Mono.Posix\UnixEndPoint.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixBinaryClientFormatterSink.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixBinaryClientFormatterSinkProvider.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixBinaryCore.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixBinaryServerFormatterSink.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixBinaryServerFormatterSinkProvider.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixChannel.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixClientChannel.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixClientTransportSink.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixClientTransportSinkProvider.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixConnectionPool.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixMessageIO.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixServerChannel.cs" />
+    <Compile Include="Mono.Posix\Mono.Remoting.Channels.Unix\UnixServerTransportSink.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\CdeclFunction.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\FileNameMarshaler.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\MapAttribute.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\NativeConvert.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\NativeConvert.generated.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\RealTimeSignum.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\Stdlib.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\Syscall.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix.Native\TypeAttributes.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\AbstractUnixEndPoint.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\Catalog.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\FileAccessPattern.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\FileAccessPermissions.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\FileHandleOperations.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\FileSpecialAttributes.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\FileTypes.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\PeerCred.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\StdioFileStream.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixClient.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixDirectoryInfo.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixDriveInfo.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixEncoding.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixEndPoint.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixEnvironment.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixFileInfo.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixFileSystemInfo.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixGroupInfo.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixIOException.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixListener.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixMarshal.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixPath.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixPipes.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixProcess.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixSignal.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixStream.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixSymbolicLinkInfo.cs" />
+    <Compile Include="Mono.Posix\Mono.Unix\UnixUserInfo.cs" />
+    <Compile Include="UnixFileHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpen\Sharpen.csproj">
+      <Project>{72944A6C-45FF-4EF8-B349-8C9CABF519D4}</Project>
+      <Name>Sharpen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mono.Posix\Mono.Posix\ChangeLog" />
+    <None Include="Mono.Posix\Mono.Remoting.Channels.Unix\ChangeLog" />
+    <None Include="Mono.Posix\Mono.Unix.Native\ChangeLog" />
+    <None Include="Mono.Posix\Mono.Unix\ChangeLog" />
+  </ItemGroup>
+</Project>
